@@ -1,0 +1,51 @@
+.hidden{
+    display: none;
+}
+.display-visible{
+    display: block;
+}
+.p-color{
+    color: var(--light-background-color)
+}
+.font-size-3-rem{
+    font-size: 3rem;
+}
+.w-fit{
+    width: fit-content;
+    height: 5vh;
+}
+.burger{
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    display: none;
+}
+.burger:active{
+    border: 2px solid #eee;
+}
+.left-0{
+    left: 0!important;
+}
+.warning-massage{
+    color: red;
+    background-color: yellow;
+    height: fit-content;
+    width: fit-content;
+}
+.square{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#alart{
+    display: none;
+    color: yellow;
+    height: fit-content;
+    width: fit-content;
+}
+.my-3{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}

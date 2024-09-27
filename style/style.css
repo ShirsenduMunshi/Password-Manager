@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700;800&family=Roboto+Slab:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --light-bg-color: #000;
+    --light-background-color: #fff;
+    --dark-bg-color: #fff;
+    --dark-background-color: #15232c;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+    border: 3px solid #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+body {
+    background-color: var(--dark-background-color);
+}
+
+header {
+    height: 8vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .right .list {
+    width: 60%;
+    height: 100%;
+}
+
+nav .right .list ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav .right .list ul>li {
+    height: fit-content;
+    width: fit-content;
+}
+
+nav .right .list ul>li>a {
+    text-decoration: none;
+    color: var(--dark-bg-color);
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    transition: all ease-in-out 0.5s;
+}
+
+nav .right .list ul>li>a:hover {
+    color: #5e6366;
+}
+
+nav .right .dropdown {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .right .dropdown select {
+    height: 70%;
+    width: 60%;
+    background: #aeb0b1;
+    color: var(--dark-bg-color);
+    border: 2px solid transparent;
+    border-radius: 0.5vw;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all ease-in-out 0.5s;
+}
+
+nav .right .dropdown select:hover {
+    background: gray;
+}
+
+nav .right .dropdown select:focus {
+    background: rgb(88, 88, 88);
+}
+
+nav .Midd {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 35%;
+}
+
+nav .Midd .search {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .Midd .search .input {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .Midd .search .input input {
+    height: 50%;
+    width: 24vw;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    background-color: #96999b;
+    text-align: center;
+    color: var(--light-bg-color);
+}
+
+nav .Midd .search .search_btn {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .Midd .search .search_btn button {
+    height: 50%;
+    width: 6vw;
+    color: var(--light-bg-color);
+    background-color: #aeb0b1;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: fit-content;
+    height: fit-content;
+    color: var(--light-bg-color);
+    background-color: #aeb0b1;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+nav .Midd .search .search_btn button:hover {
+    background-color: gray;
+}
+
+nav .Midd .search .search_btn button:active {
+    background-color: rgb(88, 88, 88);
+}
+
+nav .left {
+    width: 20%;
+    height: 100%;
+}
+
+nav .left .logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .left .logo a {
+    text-decoration: none;
+    color: var(--dark-bg-color);
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+main {
+    background: #19354a;
+    height: fit-content;
+    width: 90%;
+    padding: 1vw;
+    margin: 2vh auto;
+    color: var(--dark-bg-color);
+}
+
+.containar p{
+    padding: 1vw;
+}
+
+.containar p::selection{
+    color: red;
+    background-color: black;
+}
+
+.containar h1, h2, h3 {
+    background-color: #000;
+    padding: 1vw;
+}
+
+.containar h2, h3 {
+    background-color: #000;
+    width: fit-content;
+    margin: 1vh;
+    padding: 1vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+.documentation {
+    margin: 1vh 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.documentation p {
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.documentation p::selection {
+    background-color: yellow;
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #15232c;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 1vw;
+}
+
+form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: #14293a;
+    height: fit-content;
+    width: 90%;
+    padding: 1vw;
+    margin: 2vh auto;
+    color: var(--dark-bg-color);
+    font-size: 12px;
+}
+
+footer ul {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vh;
+    gap: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #41c5ed;
+    font-weight: bolder;
+}
+
+footer ul li a:hover {
+    color: #4caf50;
+}
+
+footer ul li a:active {
+    color: red;
+}
+
+footer .copy {
+    background-color: #000;
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+footer .copy a {
+    text-decoration: none;
+    color: #6047f0;
+    font-weight: bolder;
+}
